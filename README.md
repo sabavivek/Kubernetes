@@ -36,3 +36,11 @@ $ sudo cd k8sdeployment_yamls
 
 
 $ sudo kubectl apply -f .
+
+Step5: Accessing notejam URL
+
+$sudo kubectl get svc -n notejam-app
+
+Get LoadBalancer IP displayed under ClusterIP.
+
+Access the URL with http://IPaddress:3000
