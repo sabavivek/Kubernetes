@@ -7,15 +7,16 @@ Steps to create EKS Cluster
 Clone the repository https://github.com/sabavivek/Kubernetes
 
 Step1: git clone https://github.com/sabavivek/Kubernetes
-
 Either aws credentials can be configured via aws cli (OR) paste access and secret key in providers.tf
 
-Step2: terraform init
+Step2: Create EKS cluster
+$ sudo terraform init
 $ sudo terraform plan
+$ sudo terraform apply
 
-Step3: Command for check build image
+Step3: Access EKS cluster
+$ sudo aws eks --region eu-central-1 update-kubeconfig --name eks
 
-$ sudo docker images
-Step4: Run this image to create docker container and use port for expose it on network
-
-$ sudo docker run -it -p 5000:5000 <image_name:tag>
+Step4: Deploy notejam-app
+$ sudo cd k8sdeployment_yamls
+$ sudo kubectl apply -f .
