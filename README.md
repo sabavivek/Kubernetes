@@ -4,7 +4,11 @@
 
 
 Steps to create EKS Cluster
+
+
 Clone the repository https://github.com/sabavivek/Kubernetes
+
+
 
 Step1: git clone https://github.com/sabavivek/Kubernetes
 Either aws credentials can be configured via aws cli (OR) paste access and secret key in providers.tf
