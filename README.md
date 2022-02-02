@@ -3,15 +3,16 @@
 >> YAML to deploy app in EKS
 
 
-Commands for Create the Web App
-Firstly, we git clone the notejam/express repo "https://github.com/komarserjio/notejam/tree/master/express" in our local system.
+Steps to create EKS Cluster
+Clone the repository https://github.com/sabavivek/Kubernetes
 
-Step1: Create DockerFile to Dockerised this express web app
+Step1: git clone https://github.com/sabavivek/Kubernetes
 
-nano Dockerfile
-Step2: Build Dockerfile using this command
+Either aws credentials can be configured via aws cli (OR) paste access and secret key in providers.tf
 
-$ sudo docker build -t <image_name:tag> <path/URL>
+Step2: terraform init
+$ sudo terraform plan
+
 Step3: Command for check build image
 
 $ sudo docker images
