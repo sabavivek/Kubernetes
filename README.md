@@ -11,7 +11,11 @@ Either aws credentials can be configured via aws cli (OR) paste access and secre
 
 Step2: Create EKS cluster
 $ sudo terraform init
+
+
 $ sudo terraform plan
+
+
 $ sudo terraform apply
 
 Step3: Access EKS cluster
